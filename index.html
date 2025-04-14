@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Wedding Invitation</title>
-  <meta http-equiv="refresh" content="10;url=https://maps.app.goo.gl/7MCUsj41a71jiyz99">
+  <meta http-equiv="refresh" content="3;url=https://maps.app.goo.gl/7MCUsj41a71jiyz99">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -88,7 +88,7 @@
       }
     }
 
-    /* Mobile-specific tweaks */
+    /* Mobile-friendly tweaks */
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -101,21 +101,24 @@
 </head>
 <body>
   <h1>Heartfelt Thanks!</h1>
-  <p>You are invited to our wedding.</p>
+  <p>You are joyfully invited to our wedding ceremony.</p>
   <img src="Wedding pic.jpeg" alt="Wedding Photo">
+  <p class="invitation-message">We eagerly look forward to your presence as we celebrate this beautiful union!</p>
   <p class="footer">You'll be redirected to the function hall location shortly.</p>
 
-  <!-- Floating Hearts -->
+  <!-- Floating Hearts Script -->
   <script>
-    const colors = ['#ff4d6d', '#ff6b81', '#ff99ac'];
-    for (let i = 0; i < 30; i++) {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = 1 + Math.random() * 1 + 's';
-      heart.style.background = colors[Math.floor(Math.random() * colors.length)];
-      document.body.appendChild(heart);
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const colors = ['#ff4d6d', '#ff6b81', '#ff99ac'];
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+        heart.style.background = colors[Math.floor(Math.random() * colors.length)];
+        document.body.appendChild(heart);
+      }
+    });
   </script>
 </body>
 </html>
