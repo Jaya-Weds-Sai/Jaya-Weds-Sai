@@ -2,38 +2,49 @@
 <html lang="en">
 <head>
   <title>Wedding Invitation</title>
-  <meta http-equiv="refresh" content="8;url=https://maps.app.goo.gl/7MCUsj41a71jiyz99">
+  <meta http-equiv="refresh" content="3;url=https://maps.app.goo.gl/7MCUsj41a71jiyz99">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Mangal', sans-serif; /* You can also use traditional fonts like 'Devanagari', 'Lobster', etc. */
+      font-family: 'Georgia', serif;
       text-align: center;
-      padding: 50px;
       margin: 0;
-      overflow: hidden;
+      padding: 20px;
       background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
-      color: #3c3c3c; /* Rich text color */
+      overflow: hidden;
+      color: #3c3c3c;
     }
 
     h1 {
-      font-size: 3em;
-      color: #8b0000; /* Dark Red */
-      font-family: 'Georgia', serif; /* Elegant font for the header */
-      margin-bottom: 20px;
-      font-weight: bold;
+      font-size: 2.5rem;
+      color: #8b0000;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.5em;
-      color: #4b0082; /* Indigo color */
+      font-size: 1.2rem;
+      color: #4b0082;
       margin: 10px 0;
     }
 
     img {
-      width: 70%;
-      max-width: 600px;
+      width: 90%;
+      max-width: 500px;
       margin-bottom: 20px;
-      border-radius: 15px;
-      border: 5px solid #8b0000; /* Border to make the image pop */
+      border-radius: 12px;
+      border: 4px solid #8b0000;
+    }
+
+    .invitation-message {
+      font-size: 1.4rem;
+      color: #ff6347;
+      margin-top: 15px;
+    }
+
+    .footer {
+      font-size: 1rem;
+      margin-top: 25px;
+      color: #008080;
     }
 
     .heart {
@@ -43,6 +54,7 @@
       background: red;
       transform: rotate(45deg);
       animation: floatUp 6s linear infinite;
+      z-index: 0;
     }
 
     .heart::before,
@@ -76,24 +88,22 @@
       }
     }
 
-    .invitation-message {
-      font-size: 1.8em;
-      font-family: 'Lobster', cursive;
-      color: #ff6347; /* Tomato color */
-      margin-top: 20px;
-    }
-
-    .footer {
-      font-size: 1.2em;
-      margin-top: 30px;
-      color: #008080; /* Teal */
+    /* Mobile-specific tweaks */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p, .invitation-message, .footer {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Heartfelt Thanks!</h1>
-  <p>You are invited to our wedding.</p>
+  <p>You are joyfully invited to our wedding ceremony.</p>
   <img src="Wedding pic.jpeg" alt="Wedding Photo">
+  <p class="invitation-message">We eagerly look forward to your presence as we celebrate this beautiful union!</p>
   <p class="footer">You'll be redirected to the function hall location shortly.</p>
 
   <!-- Floating Hearts -->
